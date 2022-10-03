@@ -7,6 +7,7 @@ class Report
   end
 
   def output_report
+    output_type
     output_start
     output_head
     output_body_start
@@ -16,6 +17,10 @@ class Report
   end
 
   private
+
+  def output_type
+    puts "\n***** This is the #{self.class} report *****"
+  end
 
   def output_body
     @text.each do |line|

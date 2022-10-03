@@ -11,3 +11,7 @@ end
 task :report do
   ruby 'app/report.rb'
 end
+
+task :strategy do
+  ruby 'app/strategy.rb'
+end
